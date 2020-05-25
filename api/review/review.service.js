@@ -39,11 +39,8 @@ async function add(review) {
     const collection = await dbService.getCollection('review')
     try {
         await collection.insertOne(review);
-        console.log(review, 'review in service');
-        
         return review;
     } catch (err) {
-        console.log(`ERROR: cannot insert user`)
         throw err;
     }
 }

@@ -14,8 +14,6 @@ function connectSockets(io) {
                 })
         })
         socket.on('decline', notification => {
-           console.log('from:', notification.from.fullName);
-           console.log('to:', notification.to.fullName);
             userService.getById(notification.to._id)
                 .then(async user => {
                     user.notifications.push(notification)
@@ -42,6 +40,8 @@ function connectSockets(io) {
                 .then(async user => {
                     const proj = await projService.getById(notification.proj._id);
                     proj.membersApplyed.push(notification.from);
+                    console.log('notification', notification);
+                    
                     proj.membersNeeded -= notification.memebersApllied;
                     await projService.update(proj);
                     const idx = user.notifications.findIndex(

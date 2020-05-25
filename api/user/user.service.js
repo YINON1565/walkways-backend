@@ -70,11 +70,7 @@ async function update(user, isSocket = false) {
     try {
         await collection.replaceOne({ "_id": user._id }, { $set: user })
         if (!isSocket) {
-            console.log(isSocket, 'isSocket');
-            
             const reviewsByUser = await reviewService.query(filterByForUser)
-            console.log(reviewsByUser, 'reviewsByUser///////////////////////');
-            
             reviewsByUser.forEach(async review=>{
                 review.by = {
                         _id:  user._id,
