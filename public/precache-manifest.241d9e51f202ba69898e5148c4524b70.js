@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c974985b9145f44ec335",
-    "url": "/css/app.a262e3ad.css"
+    "revision": "360f39a69f17e7eb3b48",
+    "url": "/css/app.620d4b5e.css"
   },
   {
     "revision": "c2e3523acef882e728a0",
@@ -30,6 +30,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "96c9a03f8ef11710cdb05c945b9a80e4",
     "url": "/img/Spinner-1s-200px.96c9a03f.svg"
+  },
+  {
+    "revision": "5a7c23627f975ce48a4868a4ab79e651",
+    "url": "/img/WalkingMan.5a7c2362.svg"
   },
   {
     "revision": "b6f7b2272143d8c268e7dee5a5729bd9",
@@ -272,12 +276,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wifi.347b16ee.svg"
   },
   {
-    "revision": "72f4e7fad292bf1ac096a0950b06164c",
+    "revision": "357a273bd00cc7fe65a63df652717eb5",
     "url": "/index.html"
   },
   {
-    "revision": "c974985b9145f44ec335",
-    "url": "/js/app.c73f475c.js"
+    "revision": "360f39a69f17e7eb3b48",
+    "url": "/js/app.61702041.js"
   },
   {
     "revision": "c2e3523acef882e728a0",
